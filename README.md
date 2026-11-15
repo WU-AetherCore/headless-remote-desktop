@@ -74,6 +74,16 @@ sudo bash install.sh
 sudo RESOLUTION=2560x1440 WEB_PORT=8080 PANEL_PORT=8000 bash install.sh
 ```
 
+### 国内网络（GitHub 直连不通时）
+
+`raw.githubusercontent.com` 在国内经常不可达，用镜像即可：
+
+```bash
+curl -fsSL https://gh-proxy.com/https://raw.githubusercontent.com/WU-AetherCore/headless-remote-desktop/main/install.sh | sudo bash
+```
+
+备用镜像：把 `gh-proxy.com` 换成 `ghproxy.net` 即可。
+
 | 变量 | 默认值 | 说明 |
 |---|---|---|
 | `DESKTOP_USER` | 第一个 UID≥1000 的用户 | 以哪个用户身份运行桌面 |
